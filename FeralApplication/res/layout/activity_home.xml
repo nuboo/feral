@@ -1,0 +1,257 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 顶部 -->
+	<include layout="@layout/top_home"/>
+
+    <!-- 广告栏 -->
+
+    <ImageView
+        android:id="@+id/advertise_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/advertise_icon"
+        android:contentDescription="@null" />
+    <!-- 内容 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+		<!-- 音乐类 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/music_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rub_course_home_page_height"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/music_icon"
+                        android:text="@string/home_music_category_text" />
+
+                    <TextView
+                        android:id="@+id/home_music_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@drawable/rub_course_more_icon"
+                        android:text="@string/home_more_btn_text"
+                        android:textColor="#fa7122" />
+                </RelativeLayout>
+                <!-- music category -->
+
+                <com.yooikee.adapter.NoScrollGridView
+                    android:id="@+id/gridview_music_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="2"
+                    android:padding="5dp"
+                    android:horizontalSpacing="10dp" >
+                </com.yooikee.adapter.NoScrollGridView>
+            </LinearLayout>
+			<!-- 舞蹈类 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/dance_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rub_course_home_page_height"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/dance_icon"
+                        android:text="@string/home_dance_category_text" />
+
+                    <TextView
+                        android:id="@+id/home_dance_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@drawable/rub_course_more_icon"
+                        android:text="@string/home_more_btn_text"
+                        android:textColor="#fa7122" />
+                </RelativeLayout>
+                <!-- dance category -->
+
+                <com.yooikee.adapter.NoScrollGridView
+                    android:id="@+id/gridview_dance_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:numColumns="2"
+                    android:padding="5dp"
+                    android:horizontalSpacing="10dp">
+                </com.yooikee.adapter.NoScrollGridView>
+            </LinearLayout>
+            <!--  书法类-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/calligraphy_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rub_course_home_page_height"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/calligraphy_icon"
+                        android:text="@string/home_calligraphy_category_text" />
+
+                    <TextView
+                        android:id="@+id/home_calligraphy_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@drawable/rub_course_more_icon"
+                        android:text="@string/home_more_btn_text"
+                        android:textColor="#fa7122" />
+                </RelativeLayout>
+                <!-- calligraphy category -->
+
+                <com.yooikee.adapter.NoScrollGridView
+                    android:id="@+id/gridview_calligraphy_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:numColumns="2"
+                    android:padding="5dp"
+                    android:horizontalSpacing="10dp">
+                </com.yooikee.adapter.NoScrollGridView>
+            </LinearLayout>
+            <!--  绘画类-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/paint_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rub_course_home_page_height"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/paint_icon"
+                        android:text="@string/home_paint_category_text" />
+
+                    <TextView
+                        android:id="@+id/home_paint_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@drawable/rub_course_more_icon"
+                        android:text="@string/home_more_btn_text"
+                        android:textColor="#fa7122" />
+                </RelativeLayout>
+                <!-- paint category -->
+
+                <com.yooikee.adapter.NoScrollGridView
+                    android:id="@+id/gridview_paint_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:numColumns="2"
+                    android:padding="5dp"
+                    android:horizontalSpacing="10dp">
+                </com.yooikee.adapter.NoScrollGridView>
+            </LinearLayout>
+            <!-- 其他 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/other_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rub_course_home_page_height"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/other_icon"
+                        android:text="@string/home_other_category_text" />
+
+                    <TextView
+                        android:id="@+id/home_other_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@drawable/rub_course_more_icon"
+                        android:text="@string/home_more_btn_text"
+                        android:textColor="#fa7122" />
+                </RelativeLayout>
+                <!-- other category -->
+
+                <com.yooikee.adapter.NoScrollGridView
+                    android:id="@+id/gridview_other_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="2"
+                    android:padding="5dp"
+                    android:horizontalSpacing="10dp" >
+                </com.yooikee.adapter.NoScrollGridView>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+    <!-- 底部 -->
+
+    <include layout="@layout/bottom_common" />
+
+</LinearLayout>
