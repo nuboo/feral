@@ -2,8 +2,8 @@
 
 
 import java.util.LinkedList;  
-import java.util.Queue;  
-
+import java.util.Queue;
+import android.annotation.SuppressLint;
 import android.content.Context;  
 import android.database.DataSetObserver;  
 import android.graphics.Rect;  
@@ -15,6 +15,12 @@ import android.view.View;
 import android.widget.AdapterView;  
 import android.widget.ListAdapter;  
 import android.widget.Scroller;  
+/**
+ * 横向滑动的ListView  高度会铺满，建议指定固定高度
+ * @author Administrator
+ *
+ */
+
 
 public class HorizontalListView extends AdapterView<ListAdapter> {  
 
@@ -121,7 +127,7 @@ public class HorizontalListView extends AdapterView<ListAdapter> {
   private void addAndMeasureChild(final View child, int viewPos) {  
       LayoutParams params = child.getLayoutParams();  
       if(params == null) {  
-          params = new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT);  
+          params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);  
       }  
 
       addViewInLayout(child, viewPos, params, true);  
@@ -131,7 +137,8 @@ public class HorizontalListView extends AdapterView<ListAdapter> {
     
     
 
-  @Override  
+  @SuppressLint("DrawAllocation")
+@Override  
   protected synchronized void onLayout(boolean changed, int left, int top, int right, int bottom) {  
       super.onLayout(changed, left, top, right, bottom);  
 
