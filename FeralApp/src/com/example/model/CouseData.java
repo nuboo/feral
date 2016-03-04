@@ -1,11 +1,9 @@
 ﻿package com.example.model;
 
-import java.util.ArrayList;
-
-public class CourseData {
+public class CouseData {
 	String type;//类型
 	String[] tags;//标签
-	ArrayList<School> schools;
+	int number;
 	public String getType() {
 		return type;
 	}
@@ -18,12 +16,11 @@ public class CourseData {
 	public void setTags(String[] tags) {
 		this.tags = tags;
 	}
-	public ArrayList<School> getSchools() {
-		return schools;
+	public int getNumber() {
+		return number;
 	}
-	public void setSchools(ArrayList<School> schools) {
-		this.schools = schools;
+	public void setNumber(int number) {
+		this.number = number;
 	}
 	
-
 }

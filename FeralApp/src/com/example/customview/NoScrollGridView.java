@@ -6,7 +6,6 @@ import android.widget.GridView;
 
 /**
  * 自定义的一个GridView 使得其可以在带滑动的控件下实现滑动功能
- * 可以在ScrollView ListView嵌套下正常显示尺寸
  * @author Administrator
  *
  */
