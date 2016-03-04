@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    <!-- gridview中的图片 -->
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:id="@+id/grid_item_icon_home"
+        android:background="@drawable/test_icon"
+        android:contentDescription="@null"/>
+    <!-- title -->
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_item_title_home"
+        android:textSize="14sp"
+        android:textColor="@color/title_text"
+        android:text="二胡十段兴趣班"
+        />
+	    <!-- 已报名人数 -->
+	    <TextView android:id="@+id/grid_item_number_people_home"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:layout_marginTop="2dp"
+	        android:layout_below="@id/grid_item_title_home"
+	        android:textSize="10sp"
+	        android:textColor="@color/content_text_small"
+	        android:text="已报1人"/>
+	    <!--  课程来源-->
+	    <TextView android:id="@+id/grid_item_name_home"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/grid_item_number_people_home"
+	        android:layout_alignBottom="@id/grid_item_number_people_home"
+	        android:layout_marginLeft="8dp"
+	        android:textSize="10sp"
+	        android:textColor="@color/content_text_small"
+	        android:text="渝中汉昌"
+	        />
+	    <!-- 课程项,主要方向  例：乐器-->
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/grid_item_course_article_home"
+	        android:layout_below="@id/grid_item_number_people_home"
+	        android:layout_marginTop="5dp"
+	        android:paddingLeft="5dp"
+	        android:background="@drawable/rub_course_remark_bottom1"
+	        android:paddingRight="5dp"
+	        android:text="乐器"
+	        android:textSize="12sp"
+	        />
+	    <!-- 课程教学等级**例：小学** -->
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/grid_item_grade_home"
+	        android:layout_toRightOf="@id/grid_item_course_article_home"
+	        android:layout_alignBottom="@id/grid_item_course_article_home"
+	        android:background="@drawable/rub_course_remark_bottom1"
+	        android:layout_marginLeft="5dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:textSize="12sp"
+	        android:text="小学"
+	        />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/grid_item_end_time_home_right"
+	        android:layout_alignBottom="@id/grid_item_course_article_home"
+	        android:layout_alignParentRight="true"
+	        android:text="天"
+	        android:textSize="12sp"
+	        />
+	    <!-- 报名截止剩余时间 -->
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/grid_item_end_time_home"
+	        android:layout_alignBottom="@id/grid_item_course_article_home"
+	       	android:layout_toLeftOf="@id/grid_item_end_time_home_right"
+	        android:text="3"
+	        android:textColor="#fa7122"
+	        android:textSize="12sp"
+	        />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/grid_item_end_time_home_left"
+	        android:layout_alignBottom="@id/grid_item_course_article_home"
+	        android:layout_toLeftOf="@id/grid_item_end_time_home"
+	        android:text="余"
+	        android:textSize="12sp"
+	        />
+	    
+	    
+    </RelativeLayout>
+    
+</LinearLayout>

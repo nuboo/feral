@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page"
+    android:orientation="vertical" >
+
+    <!-- 我的报名记录页面 -->
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="12dp" >
+
+        <RadioButton
+            android:id="@+id/my_apply_record_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/message_all"
+            android:textColor="@color/gray" />
+
+        <RadioButton
+            android:id="@+id/my_apply_record_subscribe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/my_apply_record_subscribe"
+            android:textColor="@color/gray" />
+
+        <RadioButton
+            android:id="@+id/my_apply_record_not_accept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/my_apply_record_not_accept"
+            android:textColor="@color/gray" />
+    </RadioGroup>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        layout="@layout/activity_list_view" />
+
+</LinearLayout>
