@@ -27,7 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp" >
+            android:padding="10dp"
+            android:id="@+id/classify_radiogroup" >
 
             <RadioButton
                 android:layout_width="0dp"
@@ -36,6 +37,7 @@
                 android:button="@null"
                 android:gravity="center"
                 android:text="课程"
+                android:id="@+id/classify_course" 
                 android:textColor="@drawable/text_colors" />
 
             <RadioButton
@@ -45,6 +47,7 @@
                 android:button="@null"
                 android:gravity="center"
                 android:text="机构"
+                android:id="@+id/classify_school" 
                 android:textColor="@drawable/text_colors" />
         </RadioGroup>
 
@@ -55,9 +58,6 @@
             android:background="@color/line_color" />
     </RelativeLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:background="@color/line_color" />
+  
 
 </LinearLayout>
