@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     android:orientation="vertical" >
     <include layout="@layout/top_commom"></include>
     <LinearLayout android:layout_width="match_parent"
@@ -45,10 +46,12 @@
 		        android:contentDescription="@null"/>
         </RelativeLayout>
         <RelativeLayout android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+             android:layout_margin="5dp">
             <!-- 帖子主题 -->
         <TextView android:layout_width="match_parent"
             android:layout_height="wrap_content"
+           
             android:id="@+id/post_title"
             android:textColor="@color/content_text_big"
             android:text="中国文学大典"
@@ -92,12 +95,35 @@
         </RelativeLayout>
         
         <!-- 帖子大图 -->
-        
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/post_icon"
+            android:background="@drawable/test2"
+            />
         <!-- 帖子详情 -->
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="详情"
+            android:textColor="@color/content_text_big"
             />
         <!-- 帖子评论 -->
+        <ListView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_list"></ListView>
     </LinearLayout>
-
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="horizontal">
+        <ImageButton android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/rub_course_priase_grey"
+	        />
+	    <ImageButton android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="50dp"
+	        android:background="@drawable/rub_course_comments_light"
+	        />
+	</LinearLayout>
 </LinearLayout>

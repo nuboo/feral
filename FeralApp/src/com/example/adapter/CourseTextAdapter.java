@@ -14,7 +14,11 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
-
+/**
+ * 课程
+ * @author Administrator
+ *
+ */
 public class CourseTextAdapter extends BaseAdapter {
 	ArrayList<CouseData> list;//课程数据的list
 	LayoutInflater inflater;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal" >
+    <!--  用户评论帖子....用户头像-->
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_comment_user_icom"
+        android:contentDescription="@null"
+        />
+	<!-- 评论内容 -->
+	<TextView android:id="@+id/post_comment_user_content"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:layout_height="wrap_content"/>
+	<!--评论时间  -->
+	<TextView android:id="@+id/post_comment_time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+</LinearLayout>
