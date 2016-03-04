@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
+     
+
 
     <application
         android:allowBackup="true"
@@ -21,6 +23,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 圈子分类 -->
+        <activity android:name="com.example.feralapp.ClassificationCircleActivity" />
+        <!-- 分类 -->
+        <activity android:name="com.example.feralapp.ClassificationFragmentAcitivity" />
+        <!-- 已受约页面 -->
+        <activity android:name="com.example.feralapp.InvitationSuccessfulActivity" />
+        <!-- 消息页面 -->
+        <activity android:name="com.example.feralapp.MessageActivity" />
+        <!-- 我的帖子页面 -->
+        <activity android:name="com.example.feralapp.MyinvitationActivity" />
+        <!-- 设置页面 -->
+        <activity android:name="com.example.feralapp.SettingActivity" />
     </application>
 
 </manifest>

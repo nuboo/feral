@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:padding="12dp" >
+
+    <ImageView
+        android:id="@+id/circle_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp" >
+
+            <TextView
+                android:id="@+id/circle_literature"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/circle_literature"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/person_nub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rub_course_group_person_number"
+                android:gravity="center_vertical"
+                android:text="1080"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/circle_love_literature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/circle_love_literature"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</LinearLayout>

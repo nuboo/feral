@@ -6,6 +6,7 @@
     android:orientation="vertical">
     <!--消息页面-->
     <RadioGroup
+        android:id="@+id/message_radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"

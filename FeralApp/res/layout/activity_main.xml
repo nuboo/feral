@@ -2,16 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
- 
-    tools:context=".MainActivity"
-    
-    android:orientation="vertical" >
-<include layout="@layout/classification_top_public"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
-<LinearLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/class_page"
-    android:orientation="vertical"></LinearLayout>
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/classification_top_public" />
+
+    <LinearLayout
+        android:id="@+id/class_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
 
 </LinearLayout>
