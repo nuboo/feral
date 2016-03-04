@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 页面背景色 -->
+    <color name="page">#EEEEEE</color>
+    <!-- 线条色 -->
+    <color name="line">#EDEDED</color>
+    <!-- 红色 -->
+    <color name="common_red">#f50723</color>
+    <color name="orange">#ff8417</color>
+    <color name="gray">#9B9B9B</color>
+    <color name="main_orange">#fa7122</color>
+    <color name="main_red">#f50723</color>
+    <color name="support_dark_orange">#f53907</color>
+    <color name="support_light_orange">#ff8417</color>
+    <color name="support_green">#7fc41c</color>
+    <color name="support_blue">#5aacec</color>
+    <color name="support_red">#f53f99</color>
+    <color name="line_color">#ededed</color>
+    <color name="background_color">#eeeeee</color>
+    <color name="navigation_text">#292929</color>
+    <!-- 导航文字 -->
+    <color name="title_text">#051b28</color>
+    <color name="content_text_big">#3D3D3D</color>
+    <color name="content_text_small">#686868</color>
+
+</resources>

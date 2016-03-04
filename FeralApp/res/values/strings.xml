@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FeralApplication</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="rub_course_home_text">首页</string>
+	<string name="rub_course_category_text">分类</string>
+	<string name="rub_course_group_text">圈子</string>
+	<string name="rub_course_me_text">我</string>
+	<string name="home_music_category_text">音乐类</string>
+	<string name="home_dance_category_text">舞蹈类</string>
+	<string name="home_calligraphy_category_text">书法类</string>
+	<string name="home_paint_category_text">绘画类</string>
+	<string name="home_other_category_text">其他</string>
+	<string name="home_more_btn_text">更多</string>
+	
+	
+	
+	<!--已受约  -->
+	<string name="invitation_successful">邀约已受理，尽快受理中～</string>
+	
+	<!-- 圈子 -->
+	<string name="circle_english">同城英语圈</string>
+	<string name="circle_love_english">热爱英语，疯狂英语</string>
+	<string name="circle_literature">同城文学圈</string>
+	<string name="circle_love_literature">热爱文学，四书五经</string>
+	
+	<!--消息  -->
+	<string name="message_unread">未阅读</string>
+	<string name="message_read">已阅读</string>
+	<string name="message_all">全部</string>
+	
+	<!-- 报名记录 -->
+	<string name="my_apply_record_all">全部</string>
+	<string name="my_apply_record_subscribe">预约</string>
+	<string name="my_apply_record_not_accept">未受理</string>
+	
+	
+	<!-- 设置 -->
+	<string name="setting_about_us">关于我们</string>
+	<string name="setting_clear_the_cache">清空缓存</string>
+	<string name="setting_cancellation">退出账号</string>
+</resources>
