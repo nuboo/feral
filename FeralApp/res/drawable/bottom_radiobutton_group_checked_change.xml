@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  底部RadioButton圈子 选中改变-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+   <!-- 选中状态 --> 
+   <item android:drawable="@drawable/rub_course_group_selected_bg" android:state_checked="true"></item>
+   <!-- 未选中状态 -->
+   <item android:drawable="@drawable/rub_course_group_not_selected_bg" android:state_checked="false"></item>
+   <!-- 默认状态 -->
+	<item android:drawable="@drawable/rub_course_group_not_selected_bg"></item>
+</selector>
