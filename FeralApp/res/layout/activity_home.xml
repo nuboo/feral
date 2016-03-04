@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical" >
 
     <!-- 顶部 -->
@@ -22,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="5dp" >
+        android:padding="8dp" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,20 +31,13 @@
             android:orientation="vertical" >
 
             <!-- 音乐类 -->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
-
-                <RelativeLayout
+                <RelativeLayout 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
-
                     <ImageView
                         android:id="@+id/music_icon"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:background="@drawable/rub_course_home_page_height"
                         android:contentDescription="@null" />
 
@@ -52,6 +46,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_toRightOf="@id/music_icon"
+                        android:gravity="center"
+                        android:textColor="@color/content_text_big"
+                        android:textSize="16sp"
                         android:text="@string/home_music_category_text" />
 
                     <TextView
@@ -69,16 +66,11 @@
                     android:id="@+id/gridview_music_home"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:horizontalSpacing="10dp"
+                    android:horizontalSpacing="8dp"
+                    android:verticalSpacing="5dp"
                     android:numColumns="2"
-                    android:padding="5dp" />
-            </LinearLayout>
+                    />
             <!-- 舞蹈类 -->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -96,6 +88,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_toRightOf="@id/dance_icon"
+                        android:gravity="center"
+                        android:textColor="@color/content_text_big"
+                        android:textSize="16sp"
                         android:text="@string/home_dance_category_text" />
 
                     <TextView
@@ -113,21 +108,17 @@
                     android:id="@+id/gridview_dance_home"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:horizontalSpacing="10dp"
+                    android:horizontalSpacing="8dp"
+                    android:verticalSpacing="5dp"
                     android:numColumns="2"
-                    android:padding="5dp" />
-              
-            </LinearLayout>
+                     />
+            
             <!-- 书法类 -->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
 
                     <ImageView
                         android:id="@+id/calligraphy_icon"
@@ -141,6 +132,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_toRightOf="@id/calligraphy_icon"
+                        android:gravity="center"
+                        android:textColor="@color/content_text_big"
+                        android:textSize="16sp"
                         android:text="@string/home_calligraphy_category_text" />
 
                     <TextView
@@ -158,19 +152,14 @@
                     android:id="@+id/gridview_calligraphy_home"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:horizontalSpacing="10dp"
+                   android:horizontalSpacing="8dp"
+                    android:verticalSpacing="5dp"
                     android:numColumns="2"
-                    android:padding="5dp" >
+                   >
 
-              
                 </com.example.customview.NoScrollGridView>
-            </LinearLayout>
+            
             <!-- 绘画类 -->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -188,6 +177,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_toRightOf="@id/paint_icon"
+                        android:gravity="center"
+                        android:textColor="@color/content_text_big"
+                        android:textSize="16sp"
                         android:text="@string/home_paint_category_text" />
 
                     <TextView
@@ -205,19 +197,13 @@
                     android:id="@+id/gridview_paint_home"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:horizontalSpacing="10dp"
+                    android:horizontalSpacing="8dp"
+                    android:verticalSpacing="5dp"
                     android:numColumns="2"
-                    android:padding="5dp" >
-
-                 
+                     >
                 </com.example.customview.NoScrollGridView>
-            </LinearLayout>
+           
             <!-- 其他 -->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -226,7 +212,7 @@
                     <ImageView
                         android:id="@+id/other_icon"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:background="@drawable/rub_course_home_page_height"
                         android:contentDescription="@null" />
 
@@ -235,6 +221,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_toRightOf="@id/other_icon"
+                       android:gravity="center"
+                       android:textColor="@color/content_text_big"
+                        android:textSize="16sp"
                         android:text="@string/home_other_category_text" />
 
                     <TextView
@@ -252,13 +241,12 @@
                     android:id="@+id/gridview_other_home"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:horizontalSpacing="10dp"
+                    android:horizontalSpacing="8dp"
+                    android:verticalSpacing="5dp"
                     android:numColumns="2"
-                    android:padding="5dp" >
+                    >
 
-              
                 </com.example.customview.NoScrollGridView>
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
     <!-- 底部 -->
