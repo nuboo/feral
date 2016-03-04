@@ -1,5 +1,5 @@
-﻿
-package com.example.feralapp;
+﻿package com.example.feralapp;
+
 import com.example.fragment.ClassifyByCourse;
 import com.example.fragment.SingleTypeFragment;
 
@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-
+/**
+ * 分类页面
+ * @author admin
+ *
+ */
 public class ClassificationFragmentAcitivity extends FragmentActivity {
 	FragmentManager fragmentManager=getSupportFragmentManager();
 	ClassifyByCourse courseFragment = new ClassifyByCourse();

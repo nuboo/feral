@@ -2,15 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:orientation="vertical"
-    android:paddingLeft="8dp"
-    android:paddingRight="8dp">
+    android:padding="12dp" >
 
     <TextView
         android:id="@+id/circle_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
         android:text="中国文学大典"
         android:textColor="@android:color/black"
         android:textSize="12sp" />
@@ -19,20 +18,20 @@
         android:id="@+id/circle_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
         android:text="中国文学大典"
         android:textSize="11sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="5dp">
+        android:orientation="horizontal" >
 
         <TableRow
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1" >
 
             <TextView
                 android:id="@+id/circle_user_name"
@@ -45,6 +44,7 @@
                 android:id="@+id/circle_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:drawableLeft="@drawable/rub_course_grey_comment"
                 android:text="150"
                 android:textSize="10sp" />
@@ -57,4 +57,5 @@
             android:text="30分钟前"
             android:textSize="10sp" />
     </LinearLayout>
+
 </LinearLayout>
