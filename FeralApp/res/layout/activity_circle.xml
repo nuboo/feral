@@ -3,14 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/page"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <!-- 圈子页面 -->
-
     <include
+        layout="@layout/activity_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        layout="@layout/activity_list_view" />
+        android:layout_marginTop="5dp" />
 
 </LinearLayout>

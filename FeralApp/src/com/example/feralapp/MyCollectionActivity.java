@@ -16,6 +16,7 @@ public class MyCollectionActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_my_collection);
+		innt();
 	}
 
 	public void innt() {

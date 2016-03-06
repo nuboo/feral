@@ -3,28 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#ffffff"
-    android:padding="8dp"
-    android:orientation="horizontal" >
+    android:orientation="horizontal"
+    android:padding="8dp">
     <!-- 返回按钮 -->
-    <ImageButton android:id="@+id/rub_course_back_btn"
+    <ImageButton
+        android:id="@+id/rub_course_back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rub_course_back_icon"
-        android:contentDescription="@null"
-        />
-    <TextView android:id="@+id/rub_course_title"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/rub_course_title"
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:textColor="@color/content_text_big"
-        android:textSize="17sp"
+        android:layout_weight="1"
         android:gravity="center"
-        android:text="帖子详情"/>
-    <ImageButton android:id="@+id/rub_course_share_btn"
+        android:text="帖子详情"
+        android:textColor="@color/content_text_big"
+        android:textSize="17sp" />
+
+    <ImageButton
+        android:id="@+id/rub_course_share_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rub_course_share_icon"
-        android:contentDescription="@null"
-        />
+        android:contentDescription="@null" />
 
 </LinearLayout>

@@ -3,40 +3,43 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="5dp"
-     >
-  <TextView
+    android:padding="5dp">
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableRight="@drawable/rub_course_pull_down_menu"
-        android:text="重庆"
         android:padding="12dp"
+        android:text="重庆"
         android:textColor="#cccccc" />
 
-    <RelativeLayout android:layout_width="160dp"
+    <RelativeLayout
+        android:layout_width="160dp"
         android:layout_height="37dp"
-        android:background="@drawable/rub_course_dialog_search"
-        >
-		<LinearLayout android:layout_width="30dp"
-		    android:layout_height="30dp"
-		    android:layout_alignParentRight="true"
-		    android:orientation="vertical"
-		    android:gravity="center">
-		    <ImageButton android:layout_width="15dp"
-		        android:layout_height="15dp"
-		        android:background="@drawable/rub_course_search"
-		        android:contentDescription="@null"/>
-		</LinearLayout>
+        android:background="@drawable/rub_course_dialog_search">
 
-		<EditText
-		    android:id="@+id/seek"
-		    android:layout_width="160dp"
-		    android:layout_height="37dp"
-		    android:background="@null"
-		    android:hint=""
-		    android:textSize="12sp" >
-		</EditText>
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
 
-       </RelativeLayout> 
-    
+            <ImageButton
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/rub_course_search"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/seek"
+            android:layout_width="160dp"
+            android:layout_height="37dp"
+            android:background="@null"
+            android:hint=""
+            android:textSize="12sp"></EditText>
+
+    </RelativeLayout>
+
 </LinearLayout>

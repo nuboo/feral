@@ -17,6 +17,7 @@ public class InvitationSuccessfulActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_invitation_successful);
+		innt();
 	}
 
 	/**

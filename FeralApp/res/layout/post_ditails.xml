@@ -2,128 +2,149 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:padding="5dp">
+
     <include layout="@layout/top_commom"></include>
-    <LinearLayout android:layout_width="match_parent"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical">
-        <RelativeLayout android:layout_width="fill_parent"
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content">
             <!-- 发帖子者头像 -->
-            <ImageView android:id="@+id/post_self_user_icon"
+            <ImageView
+                android:id="@+id/post_self_user_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-             	android:contentDescription="@null"
-             	android:background="@drawable/rub_course_default_user_icon"
-                />
+                android:background="@drawable/rub_course_default_user_icon"
+                android:contentDescription="@null" />
             <!-- 发帖子者名字 -->
-            <TextView android:id="@+id/post_self_username"
-                android:layout_toRightOf="@id/post_self_user_icon"
-                android:layout_margin="8dp"
+            <TextView
+                android:id="@+id/post_self_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/content_text_small"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@id/post_self_user_icon"
                 android:text="我是强哥"
-                android:textSize="12sp"/>
-            <!-- 发帖时间 -->
-            <TextView android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/post_create_time"
-                android:layout_below="@id/post_self_username"
-                android:layout_alignLeft="@id/post_self_username"
                 android:textColor="@color/content_text_small"
+                android:textSize="12sp" />
+            <!-- 发帖时间 -->
+            <TextView
+                android:id="@+id/post_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/post_self_username"
+                android:layout_below="@id/post_self_username"
                 android:text="2015-11-12"
-                android:textSize="10sp"/>
+                android:textColor="@color/content_text_small"
+                android:textSize="10sp" />
             <!-- 帖子收藏 -->
-            <ImageButton android:id="@+id/rub_course_collection_btn"
+            <ImageButton
+                android:id="@+id/rub_course_collection_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignTop="@id/post_self_username"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:background="@drawable/rub_course_collections"
-		        android:contentDescription="@null"/>
+                android:background="@drawable/rub_course_collections"
+                android:contentDescription="@null" />
         </RelativeLayout>
-        <RelativeLayout android:layout_width="wrap_content"
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-             android:layout_margin="5dp">
+            android:layout_margin="5dp">
             <!-- 帖子主题 -->
-        <TextView android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-           
-            android:id="@+id/post_title"
-            android:textColor="@color/content_text_big"
-            android:text="中国文学大典"
-            android:textSize="15sp"/>
-        	<!-- 点赞 统计 -->
-        	<ImageView android:id="@+id/praise_grey_little"
-        	    android:layout_below="@id/post_title"
-        	    android:layout_width="wrap_content"
-        	    android:layout_height="wrap_content"
-        	    android:contentDescription="@null"
-        	    android:background="@drawable/rub_course_praise_grey_little"/>
-        	
-        	<TextView android:layout_width="wrap_content"
-        	    android:layout_height="wrap_content"
-        	    android:id="@+id/praise_count"
-        	    android:layout_toRightOf="@id/praise_grey_little"
-        	    android:layout_alignBottom="@id/praise_grey_little"
-        	    android:layout_below="@id/post_title"
-        	    android:layout_marginLeft="5dp"
-        	    android:textSize="10sp"
-        	    android:text="50"/>
-        	<!-- 评论统计 -->
-        	<ImageView android:id="@+id/comment_grey_little"
-        	    android:layout_below="@id/post_title"
-        	    android:layout_toRightOf="@id/praise_count"
-        	    android:layout_alignBottom="@id/praise_grey_little"
-        	    android:layout_marginLeft="20dp"
-        	    android:layout_width="wrap_content"
-        	    android:layout_height="wrap_content"
-        	    android:contentDescription="@null"
-        	    android:background="@drawable/rub_course_grey_comment"/>
-        	<TextView android:layout_width="wrap_content"
-        	    android:layout_height="wrap_content"
-        	    android:id="@+id/comment_count"
-        	    android:layout_toRightOf="@id/comment_grey_little"
-        	    android:layout_alignBottom="@id/praise_grey_little"
-        	    android:layout_below="@id/post_title"
-        	    android:layout_marginLeft="5dp"
-        	    android:textSize="10sp"
-        	    android:text="50"/>
+            <TextView
+                android:id="@+id/post_title"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:text="中国文学大典"
+                android:textColor="@color/content_text_big"
+                android:textSize="15sp" />
+            <!-- 点赞 统计 -->
+            <ImageView
+                android:id="@+id/praise_grey_little"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_title"
+                android:background="@drawable/rub_course_praise_grey_little"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/praise_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/praise_grey_little"
+                android:layout_below="@id/post_title"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/praise_grey_little"
+                android:text="50"
+                android:textSize="10sp" />
+            <!-- 评论统计 -->
+            <ImageView
+                android:id="@+id/comment_grey_little"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/praise_grey_little"
+                android:layout_below="@id/post_title"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/praise_count"
+                android:background="@drawable/rub_course_grey_comment"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/praise_grey_little"
+                android:layout_below="@id/post_title"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/comment_grey_little"
+                android:text="50"
+                android:textSize="10sp" />
         </RelativeLayout>
-        
+
         <!-- 帖子大图 -->
-        <ImageView android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/post_icon"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:id="@+id/post_icon"
-            android:background="@drawable/test2"
-            />
+            android:background="@drawable/test2" />
         <!-- 帖子详情 -->
-        <TextView android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="详情"
-            android:textColor="@color/content_text_big"
-            />
+            android:textColor="@color/content_text_big" />
         <!-- 帖子评论 -->
-        <ListView android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/comment_list"></ListView>
+        <ListView
+            android:id="@+id/comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
     </LinearLayout>
-	<LinearLayout android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:gravity="center"
-	    android:orientation="horizontal">
-        <ImageButton android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:background="@drawable/rub_course_priase_grey"
-	        />
-	    <ImageButton android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_marginLeft="50dp"
-	        android:background="@drawable/rub_course_comments_light"
-	        />
-	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rub_course_priase_grey" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/rub_course_comments_light" />
+    </LinearLayout>
 </LinearLayout>

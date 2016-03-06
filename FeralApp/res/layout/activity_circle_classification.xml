@@ -9,22 +9,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-<!-- 广告栏 -->
+        <!-- 广告栏 -->
         <ImageView
             android:id="@+id/circle_advertising"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-<!-- 置顶信息 -->
+        <!-- 置顶信息 -->
         <TextView
             android:id="@+id/circle_text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="中国文学大典--300部"
+            android:textColor="@android:color/black" />
 
         <TextView
             android:id="@+id/circle_text_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-<!-- list -->
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="中国文学大典--300部"
+            android:textColor="@android:color/background_dark" />
+        <!-- list -->
         <include
             layout="@layout/activity_list_view"
             android:layout_width="match_parent"
