@@ -1,12 +1,16 @@
 ﻿package com.example.feralapp;
 
+import java.util.ArrayList;
+
 import com.example.adapter.HomeGridViewAdapter;
+import com.example.customview.NoScrollGridView;
 import com.example.fragment.CircleFragment;
 import com.example.fragment.ClassificationFragment;
 import com.example.fragment.ClassifyByCourse;
 import com.example.fragment.HomePageFragment;
-
+import com.example.model.CourseClassInfo;
 import android.annotation.TargetApi;
+
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -22,8 +26,7 @@ public class HomeActivity extends FragmentActivity {
 	FragmentTransaction fragmentTransaction;
 
 	CircleFragment cirClePage=new CircleFragment();//圈子
-	ClassificationFragment course = new ClassificationFragment();
-	//ClassifyByCourse course = new ClassifyByCourse();//分类
+	ClassificationFragment course = new ClassificationFragment();//分类
 	RadioGroup bottomRadioGroup;// 底部RadioGroup
 	
 	HomeGridViewAdapter adapter;//适配器
