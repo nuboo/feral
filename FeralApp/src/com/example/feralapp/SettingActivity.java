@@ -1,6 +1,7 @@
 package com.example.feralapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -21,6 +22,9 @@ public class SettingActivity extends Activity {
 		setContentView(R.layout.activity_setting);
 	}
 
+	/**
+	 * 初始化控件
+	 */
 	public void innt() {
 		LinearLayout setting_about_us = (LinearLayout) findViewById(R.id.setting_about_us);
 		LinearLayout setting_clear_the_cache = (LinearLayout) findViewById(R.id.setting_clear_the_cache);
@@ -41,13 +45,14 @@ public class SettingActivity extends Activity {
 			// TODO Auto-generated method stub
 			switch (v.getId()) {
 			case R.id.setting_about_us:// 关于我们
-				
+				Intent intent = new Intent(SettingActivity.this, AboutUsActivity.class);
+				startActivity(intent);
 				break;
 			case R.id.setting_clear_the_cache:// 清空缓存
-				
+
 				break;
 			case R.id.setting_cancellation:// 退出账号
-				
+
 				break;
 			}
 		}
