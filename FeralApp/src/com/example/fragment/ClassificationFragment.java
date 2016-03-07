@@ -1,11 +1,12 @@
-﻿package com.example.feralapp;
+﻿package com.example.fragment;
 
 import java.util.ArrayList;
 
 import com.example.adapter.MyViewPagerAdapter;
-import com.example.fragment.ClassifyByCourse;
-import com.example.fragment.ClassifyBySchool;
-import com.example.fragment.SingleTypeFragment;
+import com.example.feralapp.R;
+import com.example.feralapp.R.id;
+import com.example.feralapp.R.layout;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -24,8 +25,8 @@ import android.widget.RadioGroup;
  *
  */
 import android.widget.RadioGroup.OnCheckedChangeListener;
-@SuppressLint("NewApi")
-public class ClassificationFragmentAcitivity extends Fragment {
+@SuppressLint({ "NewApi", "InflateParams" })
+public class ClassificationFragment extends Fragment {
 	RadioGroup group;
 	RadioButton course,school;
 //	FragmentManager fragmentManager=getActivity().getSupportFragmentManager();
@@ -52,7 +53,7 @@ public class ClassificationFragmentAcitivity extends Fragment {
 	}*/
 	
 	
-	public View onCreate(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.classification_page, null);
 		group=(RadioGroup) view.findViewById(R.id.classify);
