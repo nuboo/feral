@@ -18,23 +18,29 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+
+
 /**
  * 分类页面
+ * 
  * @author admin
  *
  */
+
 import android.widget.RadioGroup.OnCheckedChangeListener;
 @SuppressLint("NewApi")
+
 public class ClassificationFragmentAcitivity extends Fragment {
 	RadioGroup group;
 	RadioButton course,school;
-//	FragmentManager fragmentManager=getActivity().getSupportFragmentManager();
+	FragmentManager fragmentManager=getActivity().getSupportFragmentManager();
 	ViewPager viewPager;
 	ArrayList<Fragment> fragmentList=new ArrayList<Fragment>();
 	ClassifyByCourse courseFragment = new ClassifyByCourse();//课程
 	ClassifyBySchool schoolFragment=new ClassifyBySchool();
 	
-/*	@Override
+	@Override
 	protected void onCreate(Bundle arg0) {
 		// TODO Auto-generated method stub
 		setContentView(R.layout.classification_page);
@@ -49,7 +55,7 @@ public class ClassificationFragmentAcitivity extends Fragment {
 		fragmentTransaction.hide(schoolFragment);
 		fragmentTransaction.commit();
 		super.onCreate(arg0);
-	}*/
+	}
 	
 	
 	public View onCreate(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -64,8 +70,26 @@ public class ClassificationFragmentAcitivity extends Fragment {
 		fragmentList.add(courseFragment);
 		fragmentList.add(schoolFragment);
 		viewPager.setAdapter(new MyViewPagerAdapter(getChildFragmentManager(), fragmentList));
-	//	viewPager.setOnPageChangeListener(listener);
+		viewPager.setOnPageChangeListener(listener);
 		return view;
+
+public class ClassificationFragmentAcitivity extends FragmentActivity {
+	FragmentManager fragmentManager = getSupportFragmentManager();
+	ClassifyByCourse courseFragment = new ClassifyByCourse();
+	SingleTypeFragment singleTypeFragment = new SingleTypeFragment();
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+		fragmentTransaction.add(R.id.class_page, courseFragment);
+		fragmentTransaction.add(R.id.class_page, singleTypeFragment);
+		fragmentTransaction.hide(courseFragment);
+		fragmentTransaction.commit();
+
+
 	}
 	
 	OnCheckedChangeListener listener = new OnCheckedChangeListener() {
@@ -73,7 +97,7 @@ public class ClassificationFragmentAcitivity extends Fragment {
 		@Override
 		public void onCheckedChanged(RadioGroup arg0, int arg1) {
 			// TODO Auto-generated method stub
-		//	FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+		FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
 			switch (arg1) {
 			case R.id.classify_by_course:
 				viewPager.setCurrentItem(0);

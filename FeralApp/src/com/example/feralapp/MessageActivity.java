@@ -2,6 +2,7 @@ package com.example.feralapp;
 
 import com.example.adapter.MessageAdapter;
 import com.example.model.Message;
+import com.example.utils.TopSetting;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ public class MessageActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_message);
+		new TopSetting(this).topSetting("消息");
 		innt();
 	}
 
@@ -64,6 +66,7 @@ public class MessageActivity extends Activity {
 			}
 		}
 	};
+
 	/**
 	 * listView的item长按事件
 	 */

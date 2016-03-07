@@ -3,14 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/page"
-    android:orientation="vertical">
-    <!--我的帖子页面-->
+    android:orientation="vertical" >
+
+    <!-- 我的帖子页面 -->
+
     <include
-        layout="@layout/activity_list_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        layout="@layout/top_commom" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        layout="@layout/activity_list_view" />
 
     <include
         layout="@layout/activity_linear_layout"
         android:visibility="gone" />
+
 </LinearLayout>
