@@ -1,4 +1,4 @@
-package com.example.adapter;
+﻿package com.example.adapter;
 
 import java.util.ArrayList;
 
@@ -15,7 +15,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 public class ClassifyBySchoolListViewAdapter extends BaseAdapter {
-    ArrayList<CourseData> list;//�γ����ݵ�list
+    ArrayList<CourseData> list;
     LayoutInflater inflater;
     Context context;
     ClassifyBySchoolGridViewAdapter adapter;
