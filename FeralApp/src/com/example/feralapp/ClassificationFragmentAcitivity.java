@@ -1,5 +1,8 @@
 ﻿package com.example.feralapp;
 
+import java.util.ArrayList;
+
+import com.example.adapter.MyViewPagerAdapter;
 import com.example.fragment.ClassifyByCourse;
 import com.example.fragment.ClassifyBySchool;
 import com.example.fragment.SingleTypeFragment;
@@ -9,6 +12,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,15 +25,16 @@ import android.widget.RadioGroup;
  */
 import android.widget.RadioGroup.OnCheckedChangeListener;
 @SuppressLint("NewApi")
-public class ClassificationFragmentAcitivity extends FragmentActivity {
+public class ClassificationFragmentAcitivity extends Fragment {
 	RadioGroup group;
 	RadioButton course,school;
-	FragmentManager fragmentManager=getSupportFragmentManager();
-	
+//	FragmentManager fragmentManager=getActivity().getSupportFragmentManager();
+	ViewPager viewPager;
+	ArrayList<Fragment> fragmentList=new ArrayList<Fragment>();
 	ClassifyByCourse courseFragment = new ClassifyByCourse();//课程
 	ClassifyBySchool schoolFragment=new ClassifyBySchool();
 	
-	@Override
+/*	@Override
 	protected void onCreate(Bundle arg0) {
 		// TODO Auto-generated method stub
 		setContentView(R.layout.classification_page);
@@ -44,42 +49,37 @@ public class ClassificationFragmentAcitivity extends FragmentActivity {
 		fragmentTransaction.hide(schoolFragment);
 		fragmentTransaction.commit();
 		super.onCreate(arg0);
-	}
+	}*/
 	
 	
-	/*public View onCreate(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+	public View onCreate(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.classification_page, null);
 		group=(RadioGroup) view.findViewById(R.id.classify);
 		course=(RadioButton) view.findViewById(R.id.classify_by_course);
 		school=(RadioButton) view.findViewById(R.id.classify_by_school);
 		course.setChecked(true);
+		viewPager=(ViewPager) view.findViewById(R.id.class_page);
 		group.setOnCheckedChangeListener(listener);
-		FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-		fragmentTransaction.add(R.id.class_page,courseFragment);
-		fragmentTransaction.add(R.id.class_page, schoolFragment);
-		fragmentTransaction.hide(schoolFragment);
-		fragmentTransaction.commit();
-
+		fragmentList.add(courseFragment);
+		fragmentList.add(schoolFragment);
+		viewPager.setAdapter(new MyViewPagerAdapter(getChildFragmentManager(), fragmentList));
+	//	viewPager.setOnPageChangeListener(listener);
 		return view;
 	}
-*/	
+	
 	OnCheckedChangeListener listener = new OnCheckedChangeListener() {
 		
 		@Override
 		public void onCheckedChanged(RadioGroup arg0, int arg1) {
 			// TODO Auto-generated method stub
-			FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+		//	FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
 			switch (arg1) {
 			case R.id.classify_by_course:
-				fragmentTransaction.hide(schoolFragment);
-				fragmentTransaction.show(courseFragment);
-				fragmentTransaction.commit();
+				viewPager.setCurrentItem(0);
 				break;
 			case R.id.classify_by_school:
-				fragmentTransaction.show(schoolFragment);
-				fragmentTransaction.hide(courseFragment);
-				fragmentTransaction.commit();
+				viewPager.setCurrentItem(1);
 				break;
 
 			default:
