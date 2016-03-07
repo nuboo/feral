@@ -28,7 +28,7 @@ public class ClassifyByCourse extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		View view =inflater.inflate(R.layout.class_course, null);
+		View view =inflater.inflate(R.layout.classifycation_by_course, null);
 		ListView listView = (ListView) view.findViewById(R.id.classsfy_list_view);
 		for(int i=0;i<type.length;i++){
 			data=new CourseData();
