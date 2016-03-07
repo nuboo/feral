@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 /**
- * 
+ * 帖子详情页面 Fragment
  * @author Administrator
  *
  */
