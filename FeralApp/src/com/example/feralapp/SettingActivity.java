@@ -1,5 +1,7 @@
 package com.example.feralapp;
 
+import com.example.utils.TopSetting;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,6 +22,8 @@ public class SettingActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_setting);
+		new TopSetting(this).topSetting("设置");
+		innt();
 	}
 
 	/**
@@ -54,6 +58,7 @@ public class SettingActivity extends Activity {
 			case R.id.setting_cancellation:// 退出账号
 
 				break;
+
 			}
 		}
 	};

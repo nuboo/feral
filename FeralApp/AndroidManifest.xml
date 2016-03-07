@@ -37,11 +37,15 @@
         <!-- 设置页面 -->
         <activity android:name="com.example.feralapp.SettingActivity" />
         <!-- 关于我们 -->
-        <activity android:name="com.example.feralapp.AboutUsActivity" />
+        <activity android:name="com.example.feralapp.AboutUsActivity" >
+        </activity>
+
         <!-- 我的收藏 -->
         <activity android:name="com.example.feralapp.MyCollectionActivity" />
         <!-- 我的报名记录 -->
         <activity android:name="com.example.feralapp.MyApplyActivity" />
+        <!-- 发帖 -->
+        <activity android:name="com.example.feralapp.PostAMessageActivity" />
     </application>
 
 </manifest>

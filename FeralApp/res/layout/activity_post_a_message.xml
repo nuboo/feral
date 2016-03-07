@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page"
+    android:orientation="vertical" >
+
+    <!-- 发帖 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_commom" />
+
+    <EditText
+        android:id="@+id/post_a_message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:hint="标题（必选）"
+        android:padding="12dp"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/post_a_message_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:hint="内容（不少于5各字）"
+        android:padding="12dp"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -3,15 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/page"
-    android:orientation="vertical">
-    <!--设置页面-->
+    android:orientation="vertical" >
+
+    <!-- 设置页面 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        layout="@layout/top_commom" />
+
     <LinearLayout
         android:id="@+id/setting_about_us"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:orientation="horizontal"
-        android:padding="15dp">
+        android:padding="15dp" >
 
         <TextView
             android:layout_width="0dp"
@@ -27,7 +35,6 @@
             android:background="@drawable/rub_course_go_to_next_right" />
     </LinearLayout>
 
-
     <LinearLayout
         android:id="@+id/setting_clear_the_cache"
         android:layout_width="match_parent"
@@ -35,7 +42,7 @@
         android:layout_marginTop="1dp"
         android:background="@android:color/white"
         android:orientation="horizontal"
-        android:padding="15dp">
+        android:padding="15dp" >
 
         <TextView
             android:layout_width="0dp"
@@ -68,4 +75,5 @@
         android:gravity="center"
         android:text="@string/setting_cancellation"
         android:textColor="@color/orange" />
+
 </LinearLayout>

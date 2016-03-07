@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.example.adapter.MyCollectionAdapter;
 import com.example.model.MyCollection;
+import com.example.utils.TopSetting;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ public class MyCollectionActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_my_collection);
+		new TopSetting(this).topSetting("我的收藏");
 		innt();
 	}
 
@@ -40,4 +42,5 @@ public class MyCollectionActivity extends Activity {
 			listView.setAdapter(myCollectionAdapter);
 		}
 	}
+
 }

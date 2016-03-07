@@ -4,12 +4,14 @@
     android:layout_height="wrap_content"
     android:background="#ffffff"
     android:orientation="horizontal"
-    android:padding="8dp">
+    android:padding="8dp" >
+
     <!-- 返回按钮 -->
+
     <ImageButton
         android:id="@+id/rub_course_back_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@drawable/rub_course_back_icon"
         android:contentDescription="@null" />
 
@@ -23,11 +25,10 @@
         android:textColor="@color/content_text_big"
         android:textSize="17sp" />
 
-    <ImageButton
+    <TextView
         android:id="@+id/rub_course_share_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/rub_course_share_icon"
-        android:contentDescription="@null" />
+        android:background="@drawable/rub_course_share_icon" />
 
 </LinearLayout>
