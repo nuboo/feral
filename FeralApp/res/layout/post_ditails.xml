@@ -118,11 +118,22 @@
             android:layout_margin="5dp"
             android:background="@drawable/test2" />
         <!-- 帖子详情 -->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="详情"
             android:textColor="@color/content_text_big" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="This is test data!"
+            android:textColor="@color/content_text_big" />
+        </LinearLayout>
+        
         <!-- 帖子评论 -->
         <ListView
             android:id="@+id/comment_list"
