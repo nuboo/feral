@@ -27,7 +27,7 @@
         <!-- 圈子分类 -->
         <activity android:name="com.example.fragment.ClassificationCircleFragmentAcitivity" />
         <!-- 分类 -->
-        <activity android:name="com.example.feralapp.ClassificationFragmentAcitivity" />
+      <!--   <activity android:name="com.example.fragment.ClassificationFragment" /> -->
         <!-- 已受约页面 -->
         <activity android:name="com.example.feralapp.InvitationSuccessfulActivity" />
         <!-- 消息页面 -->
