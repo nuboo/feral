@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/home_page_fragment_container"></LinearLayout>
+    
+    
+    <RadioGroup  android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/common_bottom_radiogroup"
-    android:orientation="horizontal" >
-    <RadioButton android:id="@+id/home_common_rdb"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:background="#ffffff">
+        <RadioButton android:id="@+id/home_common_rdb"
 	    android:layout_width="0dp"
 	    android:layout_weight="1"
 	    android:layout_height="wrap_content"
@@ -46,4 +58,12 @@
 	    android:textSize="12sp"
 	    android:textColor="@drawable/bottom_radiobutton_textcolor_checked_change"
 	    android:drawableTop="@drawable/bottom_radiobutton_me_checked_change"/>
-</RadioGroup>
+        
+        
+        
+    </RadioGroup>
+    <TextView android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="@color/background_color"
+        android:layout_above="@id/common_bottom_radiogroup"/>
+    </RelativeLayout>
