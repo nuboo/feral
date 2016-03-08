@@ -1,14 +1,13 @@
 ﻿package com.example.feralapp;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import com.example.adapter.HomeGridViewAdapter;
-import com.example.customview.NoScrollGridView;
 import com.example.fragment.CircleFragment;
 import com.example.fragment.ClassificationFragment;
 import com.example.fragment.HomePageFragment;
 import com.example.model.CourseClassInfo;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
