@@ -3,9 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/page"
-    android:orientation="vertical">
+    android:orientation="vertical" >
 
     <!-- 我的报名记录页面 -->
+
+    <include
+        android:layout_marginBottom="1dp"
+        layout="@layout/top_commom" 
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <RadioGroup
         android:id="@+id/my_apply_radio_group"
@@ -13,7 +19,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:orientation="horizontal"
-        android:padding="12dp">
+        android:padding="12dp" >
 
         <RadioButton
             android:id="@+id/my_apply_record_all"
@@ -48,9 +54,9 @@
     </RadioGroup>
 
     <include
-        layout="@layout/activity_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        layout="@layout/activity_list_view" />
 
 </LinearLayout>

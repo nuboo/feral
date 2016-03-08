@@ -1,4 +1,4 @@
-package com.example.adapter;
+锘縫ackage com.example.adapter;
 
 import java.util.ArrayList;
 
@@ -14,7 +14,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 /**
- * 课程分类GridView中图片以及教育机构名称的adapter
+ * 璇剧▼鍒嗙被GridView涓浘鐗囦互鍙婃暀鑲叉満鏋勫悕绉扮殑adapter
  * @author Administrator
  *
  */

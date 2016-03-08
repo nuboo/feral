@@ -3,15 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/page"
-    android:orientation="vertical">
-    <!--消息页面-->
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        layout="@layout/top_commom" />
+    <!-- 消息页面 -->
+
     <RadioGroup
         android:id="@+id/message_radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:orientation="horizontal"
-        android:padding="12dp">
+        android:padding="12dp" >
 
         <RadioButton
             android:id="@+id/message_unread"
@@ -45,7 +52,8 @@
     </RadioGroup>
 
     <include
-        layout="@layout/activity_list_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        layout="@layout/activity_list_view" />
+
 </LinearLayout>

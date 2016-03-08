@@ -1,5 +1,7 @@
 package com.example.feralapp;
 
+import com.example.utils.TopSetting;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -17,6 +19,7 @@ public class InvitationSuccessfulActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_invitation_successful);
+		new TopSetting(this).topSetting("已受约");
 		innt();
 	}
 
