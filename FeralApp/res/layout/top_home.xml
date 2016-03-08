@@ -46,9 +46,12 @@
             android:textSize="12sp"></EditText>
 
     </RelativeLayout>
-    <RelativeLayout android:layout_width="wrap_content"
+   
+	</LinearLayout>
+	 <RelativeLayout android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/roudcorner"
+        android:layout_gravity="center_vertical"
         android:gravity="right">
         <ImageView android:layout_width="10dp"
             android:layout_height="10dp"
@@ -56,5 +59,4 @@
             android:layout_marginTop="2dp"
             />
     </RelativeLayout>
-	</LinearLayout>
 </LinearLayout>

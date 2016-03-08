@@ -3,9 +3,6 @@ package com.example.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.provider.ContactsContract.Contacts.Data;
-import android.widget.ArrayAdapter;
-
 /**
  * 圈子分类实体类
  * 
