@@ -20,7 +20,7 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 public class ClassificationFragment extends Fragment {
 	RadioGroup group;
 	RadioButton course, school;
-	FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+
 	ViewPager viewPager;
 	ArrayList<Fragment> fragmentList = new ArrayList<Fragment>();
 	ClassifyByCourse courseFragment = new ClassifyByCourse();// 课程
@@ -53,7 +53,7 @@ public class ClassificationFragment extends Fragment {
 		@Override
 		public void onCheckedChanged(RadioGroup arg0, int arg1) {
 			// TODO Auto-generated method stub
-			FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+		
 			switch (arg1) {
 			case R.id.classify_by_course:
 				viewPager.setCurrentItem(0);
